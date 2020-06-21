@@ -1,13 +1,13 @@
-package com.example.BackEnd_Gcm_Login;
+package com.cesjf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackEndGcmLoginApplication {
+public class GcmloginApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackEndGcmLoginApplication.class, args);
+		SpringApplication.run(GcmloginApplication.class, args);
 	}
 
 }

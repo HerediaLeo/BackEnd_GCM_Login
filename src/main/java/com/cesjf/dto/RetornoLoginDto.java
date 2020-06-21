@@ -1,7 +1,7 @@
-package com.example.BackEnd_Gcm_Login.dto;
+package com.cesjf.dto;
 
 public class RetornoLoginDto {
-
+	
 	private Long id;
 	
 	private String nome;
@@ -85,4 +85,6 @@ public class RetornoLoginDto {
 		return "RetornoLoginDto [id=" + id + ", nome=" + nome + ", sobrenome=" + sobrenome + "]";
 	}
 	
+	
+
 }

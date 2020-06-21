@@ -1,4 +1,4 @@
-package com.example.BackEnd_Gcm_Login.dto;
+package com.cesjf.dto;
 
 import java.util.Date;
 
@@ -137,6 +137,6 @@ public class ConsultaUsuarioDto {
 	}
 	
 	
-	
+
 
 }

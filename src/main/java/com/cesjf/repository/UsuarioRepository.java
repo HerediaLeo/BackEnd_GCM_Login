@@ -1,17 +1,20 @@
-package com.example.BackEnd_Gcm_Login.repository;
+package com.cesjf.repository;
+
+import javax.transaction.Transactional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.example.BackEnd_Gcm_Login.dto.ConsultaUsuarioDto;
-import com.example.BackEnd_Gcm_Login.dto.RetornoLoginDto;
-import com.example.BackEnd_Gcm_Login.model.Usuario;
+import com.cesjf.dto.ConsultaUsuarioDto;
+import com.cesjf.dto.RetornoLoginDto;
+import com.cesjf.model.Usuario;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+@Transactional
+public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
-	@Query("select new com.example.BackEnd_Gcm_Login.dto.RetornoLoginDto"
+	@Query("select new com.cesjf.dto.RetornoLoginDto"
 			+ "(u.id,u.nome,u.sobrenome) "
 			+ "from Usuario u "
 			+ "where u.login = :login "
@@ -19,8 +22,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 		)
 	RetornoLoginDto retornoLogin(String login, String senha);
 	
-	
-	@Query("select new com.example.BackEnd_Gcm_Login.dto.ConsultaUsuarioDto"
+	@Query("select new com.cesjf.dto.ConsultaUsuarioDto"
 			+ "(u.id, u.nome, u.sobrenome, u.endereco, u.nascimento, u.genero)"
 			+ "from Usuario u"
 			+ " where u.id = :id"

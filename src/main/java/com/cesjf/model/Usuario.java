@@ -1,4 +1,4 @@
-package com.example.BackEnd_Gcm_Login.model;
+package com.cesjf.model;
 
 import java.util.Date;
 
@@ -8,8 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
-@Entity	
+@Entity
 public class Usuario {
 	
 	@Id

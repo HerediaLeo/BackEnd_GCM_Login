@@ -1,7 +1,7 @@
-package com.example.BackEnd_Gcm_Login.dto;
+package com.cesjf.dto;
 
 public class LoginDto {
-
+	
 	private String login;
 	
 	private String senha;
@@ -67,6 +67,7 @@ public class LoginDto {
 	public String toString() {
 		return "LoginDto [login=" + login + ", senha=" + senha + "]";
 	}
+	
 	
 
 }

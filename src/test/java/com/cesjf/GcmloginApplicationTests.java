@@ -1,10 +1,10 @@
-package com.example.BackEnd_Gcm_Login;
+package com.cesjf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackEndGcmLoginApplicationTests {
+class GcmloginApplicationTests {
 
 	@Test
 	void contextLoads() {

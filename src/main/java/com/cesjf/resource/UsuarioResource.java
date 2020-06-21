@@ -1,4 +1,4 @@
-package com.example.BackEnd_Gcm_Login.resource;
+package com.cesjf.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.BackEnd_Gcm_Login.dto.ConsultaUsuarioDto;
-import com.example.BackEnd_Gcm_Login.dto.LoginDto;
-import com.example.BackEnd_Gcm_Login.dto.RetornoLoginDto;
-import com.example.BackEnd_Gcm_Login.repository.UsuarioRepository;
+import com.cesjf.dto.ConsultaUsuarioDto;
+import com.cesjf.dto.LoginDto;
+import com.cesjf.dto.RetornoLoginDto;
+import com.cesjf.repository.UsuarioRepository;
 
 @CrossOrigin
 @RestController
@@ -53,5 +53,5 @@ public class UsuarioResource {
 			throw e;
 		}
 	}
-
+	
 }
